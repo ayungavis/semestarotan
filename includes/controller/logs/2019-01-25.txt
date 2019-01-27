@@ -1,0 +1,19 @@
+Time : 22:55:18
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'facebbok' in 'field list'
+Raw SQL : INSERT INTO team (name,job,photo,facebbok,twitter,linkedin,created_by,created_date) VALUES (:name,:job,:photo,:facebbok,:twitter,:linkedin,:created_by,:created_date)
+
+Time : 22:29:19
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'created_by' cannot be null
+Raw SQL : INSERT INTO user (name,username,email,level,active,new,twitter,facebook,linkedin,created_by,created_date) VALUES (:name,:username,:email,:level,:active,:new,:twitter,:facebook,:linkedin,:created_by,:created_date)
+
+Time : 22:28:59
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'created_by' cannot be null
+Raw SQL : INSERT INTO user (name,username,email,level,active,new,twitter,facebook,linkedin,created_by,created_date) VALUES (:name,:username,:email,:level,:active,:new,:twitter,:facebook,:linkedin,:created_by,:created_date)
+
+Time : 21:42:20
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'description' in 'field list'
+Raw SQL : INSERT INTO product (title,description,category,price,photo,active,created_by,created_date) VALUES (:title,:description,:category,:price,:photo,:active,:created_by,:created_date)
+
+Time : 13:03:35
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY created_date DESC' at line 1
+Raw SQL : SELECT * FROM product LIMIT 5 ORDER BY created_date DESC

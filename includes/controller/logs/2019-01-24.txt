@@ -1,0 +1,22 @@
+Time : 16:41:11
+SQLSTATE[HY000]: General error: 2031 
+Raw SQL : SELECT * FROM user WHERE username = :username ORDER BY id DESC
+
+Time : 16:41:04
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'dob' in 'order clause'
+Raw SQL : SELECT * FROM user WHERE username = :username ORDER BY dob DESC
+
+Time : 16:40:43
+SQLSTATE[HY000]: General error: 2031 
+Raw SQL : SELECT * FROM user WHERE username = :username
+
+Time : 16:28:25
+SQLSTATE[HY000]: General error: 2031 
+Raw SQL : SELECT * FROM user WHERE username = :username
+
+Time : 16:27:56
+SQLSTATE[HY000]: General error: 2031 
+Raw SQL : SELECT * FROM user WHERE username = :username
+
+Time : 13:57:41
+SQLSTATE[HY000] [1049] Unknown database 'testdb'
